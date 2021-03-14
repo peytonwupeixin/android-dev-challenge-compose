@@ -10,4 +10,10 @@
       the License.
       -->
     <string name="app_name">AndroidDevChallenge</string>
+    <string name="create_account">Create_account</string>
+    <string name="log_in">Log in</string>
+    <string name="email">Email address</string>
+    <string name="password">Password (8+ characters)</string>
+    <string name="feature_not_available">Feature not available</string>
+    <string name="dismiss">DISMISS</string>
 </resources>

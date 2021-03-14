@@ -15,9 +15,17 @@
  */
 package com.example.androiddevchallenge.ui.theme
 
+import androidx.compose.material.Colors
+import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.compositeOver
 
-val purple200 = Color(0xFFBB86FC)
-val purple500 = Color(0xFF6200EE)
-val purple700 = Color(0xFF3700B3)
-val teal200 = Color(0xFF03DAC5)
+val pink900 = Color(0xFF3F2C2C)
+val pink100 = Color(0xFFFFF1F1)
+val Gray = Color(0xFF232323)
+val green900 = Color(0xFF2D3B2D)
+val green300 = Color(0xFFB8C9BB)
+@Composable
+fun Colors.compositedOnSurface(alpha: Float): Color {
+    return onSurface.copy(alpha = alpha).compositeOver(surface)
+}
