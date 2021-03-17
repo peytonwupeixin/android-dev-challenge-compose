@@ -1,18 +1,22 @@
-# Put title of your app here
+# AndroidDevChallenge Jetpack Compose Week 3  Demo
 
 <!--- Replace <OWNER> with your Github Username and <REPOSITORY> with the name of your repository. -->
 <!--- You can find both of these in the url bar when you open your repository in github. -->
-![Workflow result](https://github.com/<OWNER>/<REPOSITORY>/workflows/Check/badge.svg)
+![Workflow result](https://github.com/peytonwupeixin/android-dev-challenge-compose/workflows/Check/badge.svg)
 
 
 ## :scroll: Description
 <!--- Describe your app in one or two sentences -->
+This is a challenge demo app for AndroidDevChallenge week#3 written by Jetpack Compose.
+
+The app contains 3 screens that according the design documentation.
 
 
 ## :bulb: Motivation and Context
 <!--- Optionally point readers to interesting parts of your submission. -->
 <!--- What are you especially proud of? -->
-
+The UI layer is all implemented by Jetpack Compose. This is a simple and clean project for beginners to read and learn.
+Also the project included other Jetpack components, so you can learn how Jetpack Compose can work with them as well.
 
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
