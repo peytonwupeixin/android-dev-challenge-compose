@@ -1,3 +1,18 @@
+/*
+ * Copyright 2021 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     https://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package com.example.androiddevchallenge.welcome
 
 import androidx.compose.foundation.Image
@@ -71,13 +86,17 @@ fun WelcomeScreen(onLoginClick: () -> Unit) {
                     modifier = Modifier.paddingFromBaseline(top = 32.dp),
                     color = MaterialTheme.colors.onPrimary
                 )
-                Button(modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(start = 16.dp, end = 16.dp, top = 40.dp)
-                    .height(48.dp),
-                    colors = ButtonDefaults.buttonColors(backgroundColor = MaterialTheme.colors.secondary,
-                    contentColor = MaterialTheme.colors.onSecondary),
-                    shape = MaterialTheme.shapes.medium, onClick = {
+                Button(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(start = 16.dp, end = 16.dp, top = 40.dp)
+                        .height(48.dp),
+                    colors = ButtonDefaults.buttonColors(
+                        backgroundColor = MaterialTheme.colors.secondary,
+                        contentColor = MaterialTheme.colors.onSecondary
+                    ),
+                    shape = MaterialTheme.shapes.medium,
+                    onClick = {
                         scope.launch {
                             snackbarHostState.showSnackbar(
                                 message = snackbarErrorText,
@@ -91,9 +110,12 @@ fun WelcomeScreen(onLoginClick: () -> Unit) {
                     )
                 }
                 TextButton(
-                    colors  = ButtonDefaults.textButtonColors(contentColor = LocalCustomerColor.current.logIn,
-                    disabledContentColor = LocalCustomerColor.current.logIn),
-                    modifier = Modifier.paddingFromBaseline(top = 40.dp),onClick = onLoginClick){
+                    colors = ButtonDefaults.textButtonColors(
+                        contentColor = LocalCustomerColor.current.logIn,
+                        disabledContentColor = LocalCustomerColor.current.logIn
+                    ),
+                    modifier = Modifier.paddingFromBaseline(top = 40.dp), onClick = onLoginClick
+                ) {
                     Text(
                         text = stringResource(id = R.string.log_in),
                     )
@@ -137,7 +159,7 @@ fun ErrorSnackbar(
                         }
                     }
                 },
-                elevation= LocalElevations.current.snackBar,
+                elevation = LocalElevations.current.snackBar,
                 shape = MaterialTheme.shapes.small
             )
         },

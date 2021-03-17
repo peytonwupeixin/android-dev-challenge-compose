@@ -13,7 +13,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 package com.example.androiddevchallenge.utils
 
 import androidx.compose.foundation.background
@@ -31,11 +30,9 @@ import coil.ImageLoader
 import coil.annotation.ExperimentalCoilApi
 import coil.intercept.Interceptor
 import coil.request.ImageResult
-import coil.size.PixelSize
 import com.example.androiddevchallenge.ui.theme.compositedOnSurface
 import dev.chrisbanes.accompanist.coil.CoilImage
 import dev.chrisbanes.accompanist.coil.LocalImageLoader
-import okhttp3.HttpUrl
 
 /**
  * A wrapper around [CoilImage] setting a default [contentScale] and loading placeholder.
@@ -43,8 +40,8 @@ import okhttp3.HttpUrl
 @Composable
 fun NetworkImage(
     url: String,
-    contentDescription: String?,
     modifier: Modifier = Modifier,
+    contentDescription: String? = null,
     contentScale: ContentScale = ContentScale.Crop,
     placeholderColor: Color? = MaterialTheme.colors.compositedOnSurface(0.2f)
 ) {

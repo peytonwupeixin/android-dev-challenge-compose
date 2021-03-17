@@ -13,7 +13,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 package com.example.androiddevchallenge
 
 import androidx.compose.runtime.Composable
@@ -56,14 +55,16 @@ fun NavGraph(startDestination: String = MainDestinations.WELCOME_ROUTE) {
             LoginScreen(gotoHome = actions.gotoHome)
         }
         composable(
-            "${MainDestinations.HOME_ROUTE}?${USER_NAME_KEY}={$USER_NAME_KEY}",
-            arguments = listOf(navArgument(USER_NAME_KEY) {
-                nullable = true
-                type = NavType.StringType
-            })
+            "${MainDestinations.HOME_ROUTE}?$USER_NAME_KEY={$USER_NAME_KEY}",
+            arguments = listOf(
+                navArgument(USER_NAME_KEY) {
+                    nullable = true
+                    type = NavType.StringType
+                }
+            )
         ) { backStackEntry ->
             val arguments = requireNotNull(backStackEntry.arguments)
-            val useName = arguments.getString(USER_NAME_KEY,"")
+            val useName = arguments.getString(USER_NAME_KEY, "")
             HomeScreen(useName)
         }
     }
@@ -76,10 +77,7 @@ class MainActions(navController: NavHostController) {
     val gotoLoginScreen: () -> Unit = {
         navController.navigate(MainDestinations.LOG_IN_ROUTE)
     }
-    val gotoHome: (String,String) -> Unit = { userName: String,password:String ->
-        navController.navigate("${MainDestinations.HOME_ROUTE}?${USER_NAME_KEY}=${userName}")
-    }
-    val backPress: () -> Unit = {
-        navController.navigateUp()
+    val gotoHome: (String, String) -> Unit = { userName: String, password: String ->
+        navController.navigate("${MainDestinations.HOME_ROUTE}?$USER_NAME_KEY=$userName")
     }
 }

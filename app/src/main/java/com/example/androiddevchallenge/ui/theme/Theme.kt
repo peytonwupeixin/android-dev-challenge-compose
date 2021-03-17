@@ -25,7 +25,6 @@ import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.Immutable
 import androidx.compose.runtime.staticCompositionLocalOf
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.Color.Companion
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import com.example.androiddevchallenge.R
@@ -75,7 +74,7 @@ fun MyTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable() (
     }
 }
 @Immutable
-data class CustomerColor(val logIn:Color)
+data class CustomerColor(val logIn: Color)
 private val DarkCustomerColor = CustomerColor(Color.White)
 private val LightCustomerColor = CustomerColor(pink900)
 internal val LocalCustomerColor = staticCompositionLocalOf<CustomerColor> {
@@ -87,11 +86,10 @@ data class Elevations(val card: Dp = 1.dp, val snackBar: Dp = 2.dp, val bottomNa
 private val elevation = Elevations()
 internal val LocalElevations = staticCompositionLocalOf { Elevations() }
 
-
 @Immutable
-data class Images(@DrawableRes val logo: Int,@DrawableRes val welcomeBg: Int,@DrawableRes val welcomeIllos: Int)
-private val DarkImages = Images(R.drawable.ic_dark_logo,R.drawable.ic_dark_welcome_bg,R.drawable.ic_dark_welcome_illos)
-private val LightImages = Images(R.drawable.ic_light_logo,R.drawable.ic_light_welcome_bg,R.drawable.ic_light_welcome_illos)
+data class Images(@DrawableRes val logo: Int, @DrawableRes val welcomeBg: Int, @DrawableRes val welcomeIllos: Int)
+private val DarkImages = Images(R.drawable.ic_dark_logo, R.drawable.ic_dark_welcome_bg, R.drawable.ic_dark_welcome_illos)
+private val LightImages = Images(R.drawable.ic_light_logo, R.drawable.ic_light_welcome_bg, R.drawable.ic_light_welcome_illos)
 internal val LocalImages = staticCompositionLocalOf<Images> {
     error("No LocalImages specified")
 }

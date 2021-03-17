@@ -1,0 +1,57 @@
+{
+  "themes": [
+    {
+      "name": "Desert chic",
+      "image": "desert_chic"
+    },
+    {
+      "name": "Tiny terrariums",
+      "image": "tiny_terrariums"
+    },
+    {
+      "name": "Jungle vibes",
+      "image": "jungle_vibes"
+    },
+    {
+      "name": "Easy care",
+      "image": "easy_care"
+    },
+    {
+      "name": "Statements",
+      "image": "statements"
+    }
+  ],
+  "plant": [
+    {
+      "name": "Monstera",
+      "image": "monstera",
+      "description": "This is a description"
+    },
+    {
+      "name": "Aglaonema",
+      "image": "aglaonema",
+      "description": "This is a description"
+    },
+    {
+      "name": "Peace lily",
+      "image": "peace_lily",
+      "description": "This is a description"
+    },
+    {
+      "name": "Fiddle leaf tree",
+      "image": "fiddle_leaf_tree",
+      "description": "This is a description"
+    },
+    {
+      "name": "Snake plant",
+      "image": "snake_plant",
+      "description": "This is a description"
+    },
+    {
+      "name": "Pothos",
+      "image": "pothos",
+      "description": "This is a description"
+    }
+  ]
+
+}

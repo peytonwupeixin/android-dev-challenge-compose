@@ -16,4 +16,10 @@
     <string name="password">Password (8+ characters)</string>
     <string name="feature_not_available">Feature not available</string>
     <string name="dismiss">DISMISS</string>
+    <string name="home">Home</string>
+    <string name="favorites">Favorites</string>
+    <string name="profile">Profile</string>
+    <string name="cart">Cart</string>
+    <string name="search">Search</string>
+    <string name="browse_themes">Browse themes</string>
 </resources>

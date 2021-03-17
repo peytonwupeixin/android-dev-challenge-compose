@@ -1,1 +1,57 @@
-{}
+{
+  "themes": [
+    {
+      "name": "Desert chic",
+      "image": "https://www.pexels.com/photo/assorted-color-flowers-2132227/"
+    },
+    {
+      "name": "Tiny terrariums",
+      "image": "https://www.pexels.com/photo/clear-glass-terrarium-jar-with-mossy-plants-1400375/"
+    },
+    {
+      "name": "Jungle vibes",
+      "image": "https://www.pexels.com/photo/big-green-leaves-of-monstera-5699665/"
+    },
+    {
+      "name": "Easy care",
+      "image": "https://www.pexels.com/photo/green-plant-with-long-leaves-in-pot-at-home-6208086/"
+    },
+    {
+      "name": "Statements",
+      "image": "https://www.pexels.com/photo/green-leaf-plant-indoors-3511755/"
+    }
+  ],
+  "plant": [
+    {
+      "name": "Monstera",
+      "image": "https://images.pexels.com/photos/2132227/pexels-photo-2132227.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=640&w=260",
+      "description": "This is a description"
+    },
+    {
+      "name": "Aglaonema",
+      "image": "https://www.pexels.com/photo/green-leaf-plant-on-white-stones-4751978/",
+      "description": "This is a description"
+    },
+    {
+      "name": "Peace lily",
+      "image": "https://www.pexels.com/photo/delicate-spathiphyllum-cochlearispathum-flowers-with-fresh-green-leaves-in-garden-4425201/",
+      "description": "This is a description"
+    },
+    {
+      "name": "Fiddle leaf tree",
+      "image": "https://www.pexels.com/photo/ficus-lyrata-with-lush-green-leaves-in-house-6208087/",
+      "description": "This is a description"
+    },
+    {
+      "name": "Snake plant",
+      "image": "https://www.pexels.com/photo/photo-of-green-snake-house-plant-2123482/",
+      "description": "This is a description"
+    },
+    {
+      "name": "Pothos",
+      "image": "https://www.pexels.com/photo/green-leaf-plant-1084199/",
+      "description": "This is a description"
+    }
+  ]
+
+}
